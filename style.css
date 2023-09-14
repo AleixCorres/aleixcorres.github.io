@@ -1,0 +1,252 @@
+/*home*/
+
+body{
+    margin: 0;
+    background-color: #fff;
+    font-family: verdana;
+}
+
+header{
+    background-color: #302F2E;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+ nav{
+    display: inline-block;
+    height: 100%;
+ }
+.navicon{
+    position: relative;
+    float: left;
+    height: 100%;
+}
+
+.navmenu{
+    position: relative;
+    float: right;
+    height: 100%;
+}
+
+.navlink{
+    color: #fff;
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+    height: 100%;
+    vertical-align: middle;
+    top: 20%;
+    position: relative;
+    margin-right: 50px;
+}
+
+li{
+    float: left;
+    margin: 0 25px;
+    color: #fff;
+}
+
+.backgroundSlide{
+    background-image: url(img/banner.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.titolsh2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 28px;
+    color: #302F2E;
+}
+
+.recomanacions{
+    background-color: #fff;
+    height: 250px;
+    display: flex;
+    padding: 50px 10%;
+}
+
+.tarjetas{
+    width: 33.33%;
+    background-color: #efebec;
+    margin: 10px;
+    text-align: center;
+}
+
+.tarjetas:hover{
+    transform: scale(1.05) translate(0px, -8px);
+    transition: all 200ms ease-in-out 0s;
+}
+
+h3.taretah3{
+    color: #302F2E;
+    font-size: 25px;
+}
+
+
+i.fa-solid {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #302F2E;
+}
+
+.home h1{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 140px;
+}
+
+
+@media only screen and (max-width: 1879px) {
+    iframe {
+        width: 400px;
+        height: 226px;
+    }
+}
+
+.home hr{
+    width:75px;
+    border-top: 3px solid #fff;
+    text-align: left;
+    margin-left: 0;
+}
+
+footer {
+    background-color: #302F2E;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-logo img {
+    height: 40px;
+}
+  
+.footer-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.footer-menu li {
+    margin-right: 20px;
+}
+  
+.footer-menu li:last-child {
+    margin-right: 0;
+}
+  
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+  .footer-social {
+    display: flex;
+}
+  
+.footer-social a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+  
+.fab {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tarjetabutton {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: #302F2E;
+    border: 3px solid #302F2E;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.tarjetabutton::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #302F2E;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+    color: #fff;
+}
+   
+.tarjetabutton:hover::before {
+    transform: translateX(0);
+    color: #fff;
+}
+
+.tarjetabutton:hover{
+    color: #fff;
+}
+
+.newsletterbutton{
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: #302F2E;
+    border: 3px solid #302F2E;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.home button.newsletterbutton::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #302F2E;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+    color: #fff;
+}
+   
+.home button.newsletterbutton:hover::before {
+    transform: translateX(0);
+    color: #fff;
+}
+
+.home button.newsletterbutton:hover{
+    color: #fff;
+}
+
+input#email{
+    background-color: #fff;
+    border: 3px solid #302F2E;
+    color: #302F2E;
+    padding: 0.7rem 2rem;
+    font-size: 16px;
+    font-weight: 700;
+    width: auto;
+}
