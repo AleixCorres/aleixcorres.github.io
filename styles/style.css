@@ -1,0 +1,635 @@
+body {
+    /* cursor: none; */
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+header{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.firstSection{
+    margin: 100px 5%;
+}
+
+.swiper-container, .experience, .aboutMe{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.marginSection{
+    margin-top: 100px;
+}
+/* Change cursor */
+
+/* .cursor {
+width: 20px;
+height: 20px;
+position: absolute;
+
+}
+
+.cursor::after {
+content: "";
+width: 20px;
+height: 20px;
+position: absolute;
+border: 1px solid gray;
+border-radius: 50%;
+opacity: .5;
+top: -8px;
+left: -8px;
+background-color: gray;
+
+} */
+
+
+
+/* Header */
+
+
+.navlink:hover {
+    background-color: #3E3BDF;
+}
+
+.navmenu{
+    position: relative;
+    float: right;
+    height: 100%;
+}
+
+.navicon{
+    position: relative;
+    float: left;
+    height: 100%;
+}
+
+.navlink{
+    color: #171717;
+}
+
+header{
+    height: 50px;
+    top: 0;
+    width: auto;
+    z-index: 999;
+    border-bottom: #171717 1px solid;
+    position: sticky;
+    background-color: #fff;
+}
+
+.navicon a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    vertical-align: middle;
+    color: #3E3BDF;
+    text-decoration: none;
+}
+
+header li{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    
+}
+
+
+
+nav{
+    display: inline-block;
+    height: 100%;
+ }
+
+ ul{
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+    position: relative;
+}
+
+li{
+    float: left;
+    margin-left: 50px;
+}
+
+/* First section */
+
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #3E3BDF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1::first-line{
+    color: #171717;
+}
+
+.row{
+    display: flex;
+}
+.col60{
+    width: 60%;
+}
+
+.col40{
+    width: 40%;
+}
+
+.firstSection{
+    /* margin: 100px 0px; */
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+
+
+.firstSection button {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3E3BDF;
+    border: 3px solid #3E3BDF;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1;
+    width: 150px;
+}
+
+.firstSection button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3E3BDF;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+    color: #fff;
+}
+   
+.firstSection button:hover::before {
+    transform: translateX(0);
+    color: #fff;
+}
+
+.firstSection button:hover{
+    color: #fff;
+}
+
+
+.middle-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* about me */
+
+.col50{
+    width: 50%;
+    float: left;
+}
+
+.aboutMe h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.logos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+
+.logo-group {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+#firstCol{
+    margin-right: 40px;
+}
+#secondCol{
+    margin-left: 40px;
+}
+
+/* carousel */
+
+.swiper-slide h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.swiper-slide p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.swiper-slide {
+    background-color: beige;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.swiper-slide.joinvito {
+    background-image: url('../img/joinvito.png');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.swiper-slide.laia {
+    background-image: url('../img/laia.png');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.swiper-slide.pokeapi {
+    background-image: url('../img/pokeapi.png');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.swiper-slide.nba {
+    background-image: url('../img/nba.png');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.swiper-slide.rol {
+    background-image: url('../img/rol.png');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.swiper-slide {
+    height: 500px!important;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: inset 0 -150px 50px -10px rgba(0, 0, 0, 0.5); /* Inner shadow */
+}
+
+.swiper-slide:hover {
+    transform: scale(1.25);
+}
+
+
+
+.swiper-slide h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px; /* Añade un margen inferior para separar el título de las etiquetas */
+}
+
+.swiper-slide {
+    background-color: beige;
+    height: 500px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: inset 0 -150px 50px -10px rgba(0, 0, 0, 0.5); /* Inner shadow */
+}
+
+.swiper-slide:hover {
+    transform: scale(1.25);
+}
+
+.swiper-slide h3 {
+    position: absolute;
+    bottom: 60px; /* Ajusta para que el título esté justo encima de las etiquetas */
+    left: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tech-tags {
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    bottom: 20px; /* Ajusta para que las etiquetas estén justo debajo del título */
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.tech-tags span {
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #ffffff;
+    border: 1px solid #fff;
+}
+
+/* accordeon */
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+    margin-top: 25px;
+   
+  }
+  
+  .accordion-title {
+    background-color: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #3E3BDF;
+    border-radius: 20px;
+  }
+
+  
+  
+  .accordion-content {
+    display: none;
+    background-color: #3E3BDF;
+    padding: 20px 50px;
+  }
+  
+  .accordion-content.show {
+    display: block;
+  }
+
+  .accordion-item{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .accordion-title{
+    padding: 20px 50px;
+    
+}
+
+.accordion-title-left {
+    flex: 1;
+    text-align: left;
+}
+
+.accordion-title-right {
+    flex: 1;
+    text-align: right;
+}
+  
+  /* about me */
+
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo-item {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    font-family: 'Inter', sans-serif;
+    background-color: #171717;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posiciona el tooltip arriba del icono */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip::after {
+    content: "";
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 100%; /* La flecha se posiciona al fondo del tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    
+}
+
+.logo-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.aboutMe p{
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+}
+
+#aboutMe{
+    margin-top: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #3E3BDF;
+    padding: 50px 5%;
+    margin-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+footer .col50 {
+    width: 48%;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer form input,
+footer form textarea,
+footer form button {
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+footer form button {
+    background-color: #fff;
+    color: #3E3BDF;
+    border: none;
+    cursor: pointer;
+    
+}
+
+footer .col50 p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer .col50 p:last-child {
+    margin-bottom: 0;
+}
+
+footer .row:last-child p {
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+footer h2{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+footer a {
+    color: #fff; /* color de los enlaces */
+    text-decoration: none; /* sin subrayado */
+    transition: color 0.3s; /* transición suave para el cambio de color */
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
+footer .col50 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente los elementos */
+}
+
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+
+.col50{
+    width: 100%;
+}
+
+.row{
+    display: grid;
+}
+
+#secondCol{
+    padding: 0px;
+    margin: 0;
+}
+
+.col60{
+order: 2;
+
+}
+.col40{
+order: 1;
+}
+
+
+/* Primero, asegúrate de que la clase .firstSection tenga la propiedad display:flex y align-items:center para centrar verticalmente el contenido */
+.firstSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Para asegurar que los elementos se apilen verticalmente */
+    text-align: center; /* Para centrar el texto dentro del contenedor */
+}
+
+/* Luego, ajusta el ancho del .col60 y .col40 para que ocupen el 100% del ancho en dispositivos móviles */
+.col60, .col40 {
+    width: 100%;
+}
+
+/* Ahora, haz que el h1 ocupe todo el ancho en dispositivos móviles */
+.firstSection h1 {
+    width: 100%;
+}
+
+/* Finalmente, ajusta el estilo de los botones para que se vean correctamente debajo del título en dispositivos móviles */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Para apilar los botones verticalmente */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.col40 img{
+    width: 50%;
+}
+
+footer .row{
+    display: grid;
+    justify-content: initial;
+}
+
+footer form input{
+    width: 100%;
+}
+
+footer form button{
+    width: 100%;
+}
+
+footer form textarea{
+    width: 100%;
+}
+
+footer .col50{
+    width: 100%;
+}
+
+footer{
+    padding: 15px 5% 10px 5%;
+}
+
+
+.firstSection{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.navmenu{
+    display: none;
+}
+
+footer .info{
+    display: none;
+}
+
+}
+
+
